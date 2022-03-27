@@ -1,6 +1,4 @@
-/** 
- * Criteria 
- */
+/*** Criteria Assignment 4 */
 
 // GIVEN I am taking a code quiz
 // WHEN I click the start button
@@ -14,21 +12,18 @@
 // WHEN the game is over
 // THEN I can save my initials and score
 
-/** 
- * DEFINE VARIABLES 
- */
 
  // Define a set of questions
 const questions = [
     {
-        question: "Inside which HTML element do we put the JavaScript?",
-        choices: ["a. <js>", "b. <javascript>", "c. <scripting>", "d. <script>"],
-        answer: "d. <script>"
+        question: "What is Javascript?",
+        choices: ["a. Where you can buy the world's best coffee", "b. An Object-based programming language", "c. A type of Pseudocode", "d. A cup of coffee with computer code written on the cup"],
+        answer: "b. An Object-based programming language"
     },
     {
-        question: "String values must be enclosed within _____ when being assigned to variables.",
-        choices: ["a. commas", "b. curly brackets", "c. quotes", "d. parenthesis"],
-        answer: "c. quotes"
+        question: "Which of the following is NOT a Javascript Data Type?",
+        choices: ["a. Cuppacino", "b. Object", "c. Boolean", "d. String"],
+        answer: "a. Cuppacino"
     },
     {
         question: "Arrays in JavaScript can be used to store _____.",
@@ -61,25 +56,16 @@ const questions = [
         answer: "a. 0"
     },
     {
-        question: "Who invented JavaScript?",
-        choices: ["a. Douglas Crockford", "b. Sheryl Sandberg", "c. Brendan Eich", "d. Ben Javascript"],
-        answer: "c. Brendan Eich"
+        question: "Which Company Developed JavaScript?",
+        choices: ["a. Google", "b. Facebook", "c. Space X", "d. Netscape"],
+        answer: "d. Netscape"
     },
     {
         question: "How to write an IF statement in JavaScript?",
         choices: ["a. if i == 5 then", "b. if i = 5 then", "c. if(i == 5)", "d. if i = 5"],
         answer: "c. if(i == 5)"
     },
-    {
-        question: "How do you add a comment in a JavaScript?",
-        choices: ["a. //This is a comment", "b. <!--This is a comment-->", "c. 'This is a comment", "d. * This is a comment *"],
-        answer: "a. //This is a comment"
-    },
-    {
-        question: "Which event occurs when the user clicks on an HTML element?",
-        choices: ["a. onclick", "b. onchange", "c. onmouseover", "d. onmouseclick"],
-        answer: "a. onclick"
-    }
+   
 ];
 
 // grab references to elements
@@ -117,15 +103,11 @@ var questionNum = 0;
 var scoreResult;
 var questionIndex = 0;
 
-/**
- * FUNCTIONS
- */
-
 // WHEN I click the start button, timer starts
-var totalTime = 151;
+var totalTime = 90;
 function newQuiz() {
     questionIndex = 0;
-    totalTime = 150;
+    totalTime = 90;
     timeLeft.textContent = totalTime;
     initialInput.textContent = "";
 
@@ -177,8 +159,8 @@ function checkAnswer(answer) {
         // console.log(correctAns);
         answerCheck.textContent = "Correct!";
     } else {
-        // wrong answer, deduct 10 second from timer
-        totalTime -= 10;
+        // wrong answer, deduct 5 second from timer
+        totalTime -= 5;
         timeLeft.textContent = totalTime;
         answerCheck.textContent = "Wrong! The correct answer is: " + questions[questionIndex].answer;
     }
