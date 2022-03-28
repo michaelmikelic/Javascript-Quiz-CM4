@@ -41,9 +41,9 @@ const questions = [
         answer: "b. function myFunction()"
     },
     {
-        question: "How do you call a function named myFunction?",
-        choices: ["a. call myFunction()", "b. call function myFunction()", "c. myFunction()", "d. call myFunction"],
-        answer: "c. myFunctions()"
+        question: "Which of the following IS NOT a looping structure in Javascript?",
+        choices: ["a. for", "b. do-while loops", "c. coffee", "d. while"],
+        answer: "c. coffee"
     },
     {
         question: "To see if two variables are equal in an if / else statement you would use ____.",
