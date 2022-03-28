@@ -265,10 +265,6 @@ function showHighScores() {
     }
 }
 
-/**
- * ADD EVENT LISTENERS
- */
-
 startQuizBtn.addEventListener("click", newQuiz);
 choiceA.addEventListener("click", chooseA);
 choiceB.addEventListener("click", chooseB);
@@ -291,5 +287,5 @@ goBackBtn.addEventListener("click", function() {
 clearHighScoreBtn.addEventListener("click", function(){
     window.localStorage.removeItem("high scores");
     listOfHighScores.innerHTML = "High Scores Cleared!";
-    listOfHighScores.setAttribute("style", "font-family: 'Archivo', sans-serif; font-style: italic;")
+    listOfHighScores.setAttribute("style", "font-family: 'Ariel', sans-serif; font-style: italic;")
 });
